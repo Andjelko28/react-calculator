@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+.calculator{
+  margin-top: 250px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+}
+
+
+.calculator > * {
+  border: 1px solid black;
+  padding: 10px;
+  background-color:black;
+  color: white;
+  border-color: white;
+  border-radius:20px ;
+}
+
+.row{
+  grid-column: 1 / -1;
+}
+
+#display{
+  text-align:right;
+}
+
+#clear{
+  text-align: center;
+}
+body{
+  background-color: grey;
+}
